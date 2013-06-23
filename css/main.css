@@ -69,18 +69,31 @@ a{
   font-weight: 400;
 }
 
+li a{
+  font-size: 0.7em;
+}
+
 .master-headline {
   text-align: center;
 }
 
 /* Large desktop */
-@media (min-width: 1200px) { ... }
+@media (min-width: 1200px) { 
+  body { font-size: large; }
+  li { font-size: medium; }
+}
  
 /* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 979px) { ... }
+@media (min-width: 768px) and (max-width: 979px) { 
+  body { font-size: medium; }
+}
  
 /* Landscape phone to portrait tablet */
-@media (max-width: 767px) { ... }
+@media (max-width: 767px) { 
+  body { font-size: medium; }
+}
  
 /* Landscape phones and down */
-@media (max-width: 480px) { ... }
+@media (max-width: 480px) { 
+  body { font-size: small; }
+}
