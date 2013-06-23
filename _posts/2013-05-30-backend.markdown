@@ -4,3 +4,9 @@ title:  "Backend"
 date:   2013-05-30 22:28:28
 categories: backend
 ---
+
+I offer backend development for mobile applications to provide easily mantainable and usable APIs and backends.
+
+Backends are devloped using Ruby on Rails, ActiveAdmin and ActiveRecord.
+
+You can have a look at my work on my [GitHub](https://github.com/nerdishbynature) page.

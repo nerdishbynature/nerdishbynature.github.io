@@ -5,4 +5,15 @@ date:   2013-05-30 22:28:28
 categories: app
 ---
 
-We are developing iOS apps since the 2009. Since then we developed over 15 apps th
+I am developing iOS apps since 2009. And I developed over 15 apps that are available through the App Store.
+
+All apps were developed using the native iOS SDK and often a JSON or XML API.
+
+If you want me to work on a project of your own just drop me an [email](mailto:info@nerdishbynature.com) or contact me via [Xing](https://www.xing.com/profile/Piet_Brauer) or [Linkedin](http://lnkd.in/ZcFqRe).
+
+I am offering the following services:
+
+* development of your own projects and ideas
+* updates on existing projects
+* consultation on iOS apps considering proof of concept and UX
+* developing dummy applications using Rubymotion

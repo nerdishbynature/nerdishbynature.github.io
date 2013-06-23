@@ -1,5 +1,21 @@
 .nbn-styled{
   font-family: 'Orbitron', sans-serif;
+  font-weight: 400; 
+}
+
+h1 .nbn-styled{
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 900;  
+}
+
+h2 .nbn-styled{
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 900;  
+}
+
+h3 .nbn-styled{
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;  
 }
 
 body {
@@ -44,6 +60,8 @@ body {
 
 a{
   color: black;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 500;
 }
 
 .nav-pills>.active>a, .nav-pills>.active>a:hover, .nav-pills>.active>a:focus{
