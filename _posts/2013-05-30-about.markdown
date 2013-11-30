@@ -5,7 +5,7 @@ date:   2013-05-30 22:28:28
 categories: about
 ---
 
-My name is Piet Brauer and I live in Leipzig, Germany. I am an iOS developer available for hire.
+My name is Piet Brauer and I live in Hamburg, Germany. I am an iOS developer available for hire.
 
 I started programing in school at the age of 18 using Delphi, PHP and HTML. 
 But after the first iOS SDK was released I discovered mobile applications and got stuck on them until now.
