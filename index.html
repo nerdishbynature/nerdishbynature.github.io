@@ -1,19 +1,23 @@
 ---
 layout: default
-title: nerdish by nature
 ---
 
-{% for post in site.categories.about %}
-  <h3><a href="{{ post.url }}">{{ post.title }}</a></h4>
-  <p>{{ post.content }}</p>
-{% endfor %}
+<div class="home">
 
-{% for post in site.categories.app %}
-  <h3><a href="{{ post.url }}">{{ post.title }}</a></h4>
-  <p>{{ post.content }}</p>
-{% endfor %}
+  <h1 class="page-heading">Posts</h1>
 
-{% for post in site.categories.backend %}
-  <h3><a href="{{ post.url }}">{{ post.title }}</a></h4>
-  <p>{{ post.content }}</p>
-{% endfor %}
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
