@@ -1,0 +1,10 @@
+<div class="apps">
+  {% for post in site.categories.app %}
+  <div class="app">
+    <a href="{{ post.app_store_link }}">
+      <img class="app-icon" src={{ post.icon }}>
+    </a>
+    <h2 class="app-title">{{ post.title }}</h2>
+  </div>
+  {% endfor %}
+</div>
