@@ -121,7 +121,7 @@ blockquote {
 }
 
 blockquote.vision {
-    font-family: Orbitron;
+    font-family: $highlight-font-family;
     font-style: normal;
     font-size: 2em;
     color: black;
@@ -155,7 +155,18 @@ pre {
     }
 }
 
+.site-title {
+  font-family: $highlight-font-family;
+}
 
+
+.page-link {
+  font-family: $highlight-font-family;
+}
+
+.site-map-list {
+  list-style-type: none;
+}
 
 /**
  * Wrapper

@@ -1,18 +1,26 @@
 div.apps {
 }
 
-.app {
+div.app {
   display: inline-block;
-  margin-right: 1.5em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
 }
 
 .app-title {
-  font-family: Orbitron;
+  font-family: $highlight-font-family;
   text-align: center;
+  color: #000;
+}
+
+.app-icon-link {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 12em;
+  height: 12em;
 }
 
 .app-icon {
-  border-radius: 2em;
-  width: 15em;
-  height: 15em;
+  border-radius: 1.5em;
 }

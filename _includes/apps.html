@@ -1,7 +1,7 @@
-<div class="apps">
+<div class="apps footer-col-wrapper">
   {% for post in site.categories.app %}
-  <div class="app">
-    <a href="{{ post.app_store_link }}">
+  <div class="app footer-col-3">
+    <a class="app-icon-link" href="{{ post.app_store_link }}">
       <img class="app-icon" src={{ post.icon }}>
     </a>
     <h2 class="app-title">{{ post.title }}</h2>

@@ -1,7 +1,7 @@
 <footer class="site-footer">
   <div class="wrapper">
     <div class="footer-col-wrapper">
-      <div class="footer-col  footer-col-2">
+      <div class="footer-col  footer-col-3">
         <ul class="social-media-list">
           {% if site.github_username %}
           <li>
@@ -15,6 +15,17 @@
             </a>
           </li>
           {% endif %}
+        </ul>
+      </div>
+      <div class="footer-col footer-col-3">
+        <ul class="site-map-list">
+          {% for page in site.pages %}
+            {% if page.title %}
+              <li class="footer-page-link">
+                <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+              </li>
+            {% endif %}
+          {% endfor %}
         </ul>
       </div>
   </div>
