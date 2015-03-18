@@ -1,11 +1,29 @@
 ---
 layout: page
-title: Imprint
+title: Legal
 permalink: /imprint/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+Piet Brauer
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+St. Georgstr. 8
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+20099 Hamburg
+
+piet@nerdishbynature.com
+
+_Dieses Impressum gilt auch für die Facebookseite http://facebook.com/135490826546893_
+
+### HAFTUNGSAUSSCHLUSS
+
+#### 1. Inhalt
+nerdishbynature.com übernimmt keinerlei Gewähr für die Aktualität, Vollständigkeit, Korrektheit und Qualität der bereitgestellten Informationen. Haftungsansprüche gegen nerdishbynature.com, welche sich auf Schäden materieller oder ideeller Art beziehen, die durch die Nutzung oder Nichtnutzung der dargebotenen Informationen bzw. durch die Nutzung fehlerhafter und unvollständiger Informationen verursacht wurden, sind grundsätzlich ausgeschlossen, sofern seitens des Autors von nerdishbynature.com kein nachweislich vorsätzliches oder grob fahrlässiges Verschulden vorliegt.
+
+#### 2. Verlinkung
+Die Internet-Seiten werden ständig sorgfältig geprüft. Trotz dieser Prüfungen kann keine Garantie und Haftung dafür übernommen werden, dass die Links (inkl. Fremdeinträge in eingerichteten Gästebüchern, Diskussionsforen und Mailinglisten), auf die diese Webseiten direkt oder indirekt verweisen, richtig und in jedem Fall aktuell sind. nerdishbynature.com ist für den Inhalt von fremden Webseiten, die mit einem solchen Link erreicht werden, nicht verantwortlich.
+
+#### 3. Copyright
+Texte, Grafiken, Scripte, Bilder, und Layout dieser Seiten unterliegen weltweitem Urheberrecht. Unerlaubte Verwendung, Weitergabe oder Reproduktion einzelner Inhalte oder kompletter Seiten werden sowohl straf- als auch zivilrechtlich verfolgt.
+
+nerdishbynature.com gestattet keine Übernahme von Bildern, Grafiken oder Texten in Datenbestände Dritter.
+Alle Rechte vorbehalten
