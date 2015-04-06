@@ -4,7 +4,7 @@
     <a class="app-icon-link" href="{{ post.app_store_link }}">
       <img class="app-icon" src={{ post.icon }}>
     </a>
-    <h2 class="app-title">{{ post.title }}</h2>
+    <a href="{{post.app_store_link}}"><h2 class="app-title">{{ post.title }}</h2></a>
   </div>
   {% endfor %}
 </div>

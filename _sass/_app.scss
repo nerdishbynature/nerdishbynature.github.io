@@ -1,4 +1,5 @@
 div.apps {
+  padding-top: 3em;
 }
 
 div.app {
@@ -23,4 +24,10 @@ div.app {
 
 .app-icon {
   border-radius: 1.5em;
+}
+
+.header-claim {
+  font-family: $highlight-font-family;
+  text-align: center;
+  color: #000;
 }
