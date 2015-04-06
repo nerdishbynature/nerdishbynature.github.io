@@ -1,11 +1,19 @@
 div.apps {
   padding-top: 3em;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-div.app {
+.app {
   display: inline-block;
-  padding-left: 1.5em;
-  padding-right: 1.5em;
+  width: -webkit-calc(50% - (#{$spacing-unit} / 2));
+  width:         calc(50% - (#{$spacing-unit} / 2));
+}
+
+.app-icon {
+//  width: 15em;
+//  height: 15em;
 }
 
 .app-title {
@@ -18,16 +26,6 @@ div.app {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 12em;
-  height: 12em;
-}
-
-.app-icon {
-  border-radius: 1.5em;
-}
-
-.header-claim {
-  font-family: $highlight-font-family;
-  text-align: center;
-  color: #000;
+  width: 25%;
+  height: 25%;
 }

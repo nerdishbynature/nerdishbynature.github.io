@@ -1,10 +1,9 @@
-<div class="apps footer-col-wrapper">
+<div class="apps">
   {% for post in site.categories.app %}
-  <div class="app footer-col-3">
-    <a class="app-icon-link" href="{{ post.app_store_link }}">
-      <img class="app-icon" src={{ post.icon }}>
-    </a>
-    <a href="{{post.app_store_link}}"><h2 class="app-title">{{ post.title }}</h2></a>
-  </div>
+  	<div class="app">
+    	<a class="app-icon-link" href="{{ post.app_store_link }}">
+    		<object class="app-icon" type="image/svg+xml" data={{ post.icon }}></object>
+			</a>
+  	</div>
   {% endfor %}
 </div>
