@@ -1,5 +1,7 @@
 title: nerdish by nature
 email: piet@nerdishbynature.com
-url: "http://nerdishbynature.com" # the base hostname & protocol for your site
+url: "http://nerdishbynature.com"
 github_username:  nerdishbynature
 markdown: kramdown
+gems:
+  - jekyll-mentions

@@ -1,22 +1,15 @@
 div.apps {
   padding-top: 3em;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
 }
 
-.app {
+div.app {
   display: inline-block;
-  width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-  width:         calc(50% - (#{$spacing-unit} / 2));
+  width: 100%;
+  margin-bottom: 3em;
 }
 
-.app-icon {
-//  width: 15em;
-//  height: 15em;
-}
-
-.app-title {
+.app-quote {
+  padding-top: 2em;
   font-family: $highlight-font-family;
   text-align: center;
   color: #000;
