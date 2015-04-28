@@ -1,26 +1,17 @@
 <footer class="site-footer">
   <div class="wrapper">
-    <div class="footer-col-wrapper">
-      <div class="footer-col  footer-col-3">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li class="footer-page-link">
-            <a href="https://github.com/{{ site.github_username }}">
-              <span class="username">GitHub</span>
-            </a>
-          </li>
-          {% endif %}
-          {% for page in site.pages %}
-            {% if page.title %}
-              <li class="footer-page-link">
-                <a href="{{ page.url | prepend: site.baseurl }}">
-                  <span class="username">{{ page.title }}</span>
-                </a>
-              </li>
-            {% endif %}
-          {% endfor %}
-        </ul>
-      </div>
+    {% if site.github_username %}
+      <a class="footer-item" href="https://github.com/{{ site.github_username }}">
+        <span class="username">GitHub</span>
+      </a>
+    {% endif %}
+    {% for page in site.pages %}
+      {% if page.title %}
+        <a class="footer-item" href="{{ page.url | prepend: site.baseurl }}">
+          <span class="username">{{ page.title }}</span>
+        </a>
+      {% endif %}
+    {% endfor %}
   </div>
 </footer>
 <script type="text/javascript">
