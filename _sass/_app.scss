@@ -2,6 +2,11 @@ div.apps {
   padding-top: 3em;
 }
 
+h1.apps-header {
+  font-family: $highlight-font-family;
+  text-align: center;
+}
+
 div.app {
   display: inline-block;
   width: 100%;
