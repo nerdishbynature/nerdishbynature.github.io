@@ -1,66 +1,20 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{ page.title }}</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- syntax highlighting CSS -->
-        <link href='http://fonts.googleapis.com/css?family=Orbitron:400,500' rel='stylesheet' type='text/css'>
+  {% include head.html %}
 
-        <!-- Custom CSS -->
-        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="/css/main.css">
+  <body>
 
-        <!-- Custom JS -->
-        <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
-    </head>
-    <body>
-      <div class="container-narrow">
-          <div class="masthead">
-             <ul class="nav nav-pills pull-right">
-              <li></li>
-              <li><a href="https://www.github.com/nerdishbynature">GitHub</a></li>
-              <li><a href="https://www.xing.com/profile/Piet_Brauer">Xing</a></li>
-              <li><a href="https://www.cocoacontrols.com/authors/nerdishbynature">CocoaControls</a></li>
-            </ul>  
-            <h3><a href="/">nerdish by nature</a></h3>          
-          </div>
-          <div class="jumbotron visible-phone visible-tablet">
-            <h1>iOS and backend development</h1>
-          </div>
-          <div class="jumbotron visible-desktop">
-            <h1>iOS and backend development</h1>
-          </div>
+    {% include header.html %}
 
-          <div class="row-fluid marketing">
-            <div class="span12">
-              {{ content }}
-            </div>
+    <div class="page-content">
+      <div class="wrapper">
+        {{ content }}
       </div>
+    </div>
 
+    {% include footer.html %}
 
+  </body>
 
-          
-
-      <div class="footer">
-        <p>&copy; nerdish by nature 2015 | {% for post in site.categories.imprint %}<a href="{{ post.url }}">{{ post.title }}</a>{% endfor %}</p>
-      </div>
-
-        </div> <!-- /container -->
-        <script type="text/javascript">
-
-          var _gaq = _gaq || [];
-          _gaq.push(['_setAccount', 'UA-27966075-1']);
-          _gaq.push(['_trackPageview']);
-
-          (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-          })();
-
-        </script>
-    </body>
 </html>

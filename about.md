@@ -1,15 +1,14 @@
 ---
-layout: post
-title:  "Imprint"
-date:   2013-05-30 22:28:28
-categories: imprint
+layout: page
+title: Legal
+permalink: /imprint/
 ---
 
 Piet Brauer
 
-Arndtstr. 25c
+St. Georgstr. 8
 
-04275 Leipzig
+20099 Hamburg
 
 piet@nerdishbynature.com
 

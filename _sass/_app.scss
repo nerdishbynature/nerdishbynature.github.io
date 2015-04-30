@@ -1,0 +1,28 @@
+div.apps {
+  padding-top: 3em;
+}
+
+h1.apps-header {
+  font-family: $highlight-font-family;
+  text-align: center;
+}
+
+div.app {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 3em;
+}
+
+.app-quote {
+  padding-top: 2em;
+  text-align: center;
+  color: #000;
+}
+
+.app-icon-link {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+  height: 25%;
+}
