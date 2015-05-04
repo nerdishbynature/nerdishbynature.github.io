@@ -1,4 +1,8 @@
-# Building better apps
+---
+layout: post
+title: Building better apps
+category: post
+---
 
 As a kid I always loved to watch the James Bond movies. Mostly because of his gadgets. I am pretty young still so I started watching the movies when Pierce Brosnan was the protagonist.
 We are talking 1995+ here. I don't know for certain (although I am pretty sure) if you still remember some of his gadgets in that time.
@@ -13,7 +17,7 @@ I asked my mom if I could get one of these and she had a friend who got one. She
 
 I have had a lot of mobile phones since then starting with some regular Nokia devices like the [3210](http://en.m.wikipedia.org/wiki/Nokia_3210), [3310](http://en.m.wikipedia.org/wiki/Nokia_3310). Despite the usual suspects I always were a fan of unusual phones.
 I started my career as an owner of non-regular phones with an [Nokia 5510](http://en.m.wikipedia.org/wiki/Nokia_5510). It featured a full qwerty keyboard but besides that it was a usual phone. But it looked very cool and different.
-I also owned a [Nokia N-Gage](http://en.m.wikipedia.org/wiki/N-Gage_(device)) which was meant for playing games you could purchase in a physical form. But despite them getting better displays and increased processing power I was still far from my James Bond experience. 
+I also owned a [Nokia N-Gage](http://en.m.wikipedia.org/wiki/N-Gage_(device)) which was meant for playing games you could purchase in a physical form. But despite them getting better displays and increased processing power I was still far from my James Bond experience.
 
 And although I could talk about the mobile phones of my youth for hours and hours. It is time to move to the mobile phone that changed my live in a very significant way.
 
