@@ -1,4 +1,8 @@
-# Building better apps
+---
+layout: post
+title: Building better apps
+category: post
+---
 
 As a kid I always loved to watch the James Bond movies. Mostly because of his gadgets. I am pretty young still so I started watching the movies when Pierce Brosnan was the protagonist.
 We are talking 1995+ here. I don't know for certain (although I am pretty sure) if you still remember some of his gadgets in that time.
