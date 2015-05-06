@@ -71,3 +71,4 @@ I think we as professionals are left out most of the time and a lot of developer
 Don't get me wrong I find photo apps cool, too. I just don't take photos, I create apps.
 
 Maybe doing apps for professional usage is a bold idea but I am happy to try it.
+
