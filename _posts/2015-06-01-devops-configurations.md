@@ -19,7 +19,7 @@ Possible environments are:
 
 - **Test** is the environment your quality assurance people run your applications that might be sandbox systems of your web application, your unit test configuration or even your Beta deployment.
 
-- **Production** is the live environment that is the AppStore for most people. But could also be an internal AppStore or the distribution system your enterprise app is be distributed through.
+- **Production** is the live environment that is the AppStore for most people. But could also be an internal AppStore or the distribution system your enterprise app is distributed through.
 
 The goal of streamlining your configurations is to get each stage of development as close as possible to each other. This makes sure you can reproduce bugs and your app is overall the same in all stages of development.
 The only parts that should differ are the ones specific to the environment, such as URLs, authentication keys and other constants. The rule of thumb is: _The less, the better._
