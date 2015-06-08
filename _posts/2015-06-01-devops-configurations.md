@@ -21,7 +21,7 @@ Possible environments are:
 
 - **Production** is the live environment that is the AppStore for most people. But could also be an internal AppStore or the distribution system your enterprise app is distributed through.
 
-The goal of streamlining your configurations is to get each stage of development as close as possible to each other. This makes sure you can reproduce bugs and your app is overall the same in all stages of development.
+The goal of streamlining your configurations is to get each stage of development as close as possible to each other. This makes sure you can reproduce bugs and your app is the same in all stages of development.
 The only parts that should differ are the ones specific to the environment, such as URLs, authentication keys and other constants. The rule of thumb is: _The less, the better._
 
 Things that should not differ:
@@ -34,7 +34,7 @@ Things that should not differ:
 
 ## Targets vs. Configurations
 
-When I started with iOS development under Xcode 3 it was common to use different targets for each stage of development. You would have a debug target, a beta target and a release target and if you work on a legacy project you might still see this. And I will give you my tip: **Delete them all**.
+When I started with iOS development under Xcode 3 it was common to use different targets for each stage of development. You would have a debug target, a beta target and a release target and if you work on a legacy project you might still see this. Here is my tip: **Delete them all**.
 
 Targets make everything very hard. When adding a class or an asset you have to make sure each of the targets is checked (which it isn't by default). So it might occur that, when you compile in a different target, some classes and images are missing and you have no clue what happened.
 
@@ -77,7 +77,7 @@ This approach gives you the opportunity to test your code paths in unit tests by
 ## Make it configurable
 
 If you are in need for different API endpoints for each stage, it is best to make them choosable from within the app.
-Use a small `UITableView` to list them and let your beta users choose the environment they want to test in. This makes sure you don't depend on a configuration and everything is exchangeable and it also leads to cleaner code as the options are clearly identified and documented.
+Use a small `UITableView` to list them and let your beta users choose the environment they want to test in. This makes sure you don't depend on a configuration, everything is exchangeable and it also leads to cleaner code as the options are clearly identified and documented.
 
 ## Conclusion
 
