@@ -3,5 +3,6 @@ email: piet@nerdishbynature.com
 url: "http://nerdishbynature.com"
 github_username:  nerdishbynature
 markdown: kramdown
+exclude: [vendor]
 gems:
   - jekyll-mentions

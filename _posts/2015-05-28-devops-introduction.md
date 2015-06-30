@@ -2,7 +2,9 @@
 layout: post
 title: DevOps in the iOS World — Introduction
 category: post
---- 
+author_twitter: pietbrauer
+author_github: pietbrauer
+---
 
 *DevOps* — You may have read this term in various links on HackerNews, job offers or conversations in your company and so did I. The sad thing is that I couldn't relate to the term and took it as a job title which combined development work and operations tasks in one person, but then a friend introduced me to the book [The Phoenix project](http://www.amazon.com/The-Phoenix-Project-Helping-Business/dp/0988262592).
 
@@ -56,5 +58,3 @@ All the automated testing and manual quality assurance of features took place co
 
 I would even go so far to say that even if you are a sole developer working on your part time project, automation can save you hours, if not days, of work.
 It also reduces your stress level when you know that doing an App Store release is nothing more than a commit (yes, even code signing).
-
-So stay tuned, follow me on Twitter [@pietbrauer](https://twitter.com/pietbrauer) or subscribe to the [RSS feed](http://nerdishbynature.com/feed.xml) to get the latest updates.
