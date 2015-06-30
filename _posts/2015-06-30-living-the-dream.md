@@ -8,7 +8,7 @@ author_github: pietbrauer
 
 I am happy to announce, that starting from July 1, 2015 my daily focus will shift from working full time at XING to being an Indie developer.
 
-I will focus on building [Git2Go](http://git2go.com) and the open source software around it. While the AppStore tries to be a hostile place for independent developers, I hope there will be room for productivity software that shits iOS devices from being media consuming monsters to working machines on the go.
+I will focus on building [Git2Go](http://git2go.com) and the open source software around it. While the AppStore tries to be a hostile place for independent developers, I hope there will be room for productivity software that shifts iOS devices from being media consuming monsters to working machines on the go.
 
 <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Hello World!</p>&mdash; Git2Go (@Git2Go) <a href="https://twitter.com/Git2Go/status/557293910016688129">January 19, 2015</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
