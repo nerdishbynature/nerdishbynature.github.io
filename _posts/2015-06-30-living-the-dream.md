@@ -10,7 +10,7 @@ I am happy to announce, that starting from July 1, 2015 my daily focus will shif
 
 I will focus on building [Git2Go](http://git2go.com) and the open source software around it. While the AppStore tries to be a hostile place for independent developers, I hope there will be room for productivity software that shits iOS devices from being media consuming monsters to working machines on the go.
 
-{% tweet 557293910016688129 %}
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Hello World!</p>&mdash; Git2Go (@Git2Go) <a href="https://twitter.com/Git2Go/status/557293910016688129">January 19, 2015</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 The current market for productivity software mainly consists of to-do list apps, with some exceptions `[1]`. We also saw some nice additions from Apple with the iOS SDK in iOS 8 and 9 with [file provider extensions](https://developer.apple.com/library/prerelease/ios/documentation/General/Conceptual/ExtensibilityPG/FileProvider.html), [split screen multitasking](http://www.theverge.com/2015/6/8/8737639/apple-ipad-split-screen-multitasking-wwdc-2015) and [additions to the built in keyboard](http://www.macrumors.com/2015/06/15/ios-9-keyboard-scaling-ipad-pro/). But software will not be the end. We are currently seeing rumors of an iPad Pro all over the Internet and the OS itself.
 
