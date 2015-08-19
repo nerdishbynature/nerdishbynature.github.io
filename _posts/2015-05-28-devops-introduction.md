@@ -42,7 +42,7 @@ The one and only solution of this is to adapt your work to an DevOps like workfl
 In the following weeks I will write blog posts about:
 
 - [Streamline Configurations in Xcode]({{ site.url }}/post/2015/06/01/devops-configurations.html)
-- Continuous Integration
+- [Continuous Integration]({{ site.url }}/post/2015/08/19/devops-continuous-integration.html)
 - Continuous Deployment
 
 I saw some great impact at @xing, once we increased the automation in our team, even when we where only 2 - 3 people.
