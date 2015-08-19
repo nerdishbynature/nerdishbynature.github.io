@@ -6,8 +6,6 @@ author_twitter: pietbrauer
 author_github: pietbrauer
 ---
 
-# DevOps in the iOS World - Continuous Integration
-
 Continuous integration should be a crucial part in every developers daily workflow. Some time ago most iOS Developers never heard of it, except they came from another platform. That luckily changed but I still see exceptions.
 
 Continuous Integration (CI) originated as part of extreme programming (XP). Originally web applications where integrated once a week or once a month and every time a new version was integrated it resulted in an Integration Hell. Features broke and functionality was lost. To circumvent this integrations were moved from a weekly or monthly schedule to a daily or hourly schedule.
