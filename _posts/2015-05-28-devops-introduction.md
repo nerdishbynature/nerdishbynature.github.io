@@ -41,8 +41,7 @@ The one and only solution of this is to adapt your work to an DevOps like workfl
 
 In the following weeks I will write blog posts about:
 
-- Streamline Configurations in Xcode
-- Continuous Testing
+- [Streamline Configurations in Xcode]({{ site.url }}/post/2015/06/01/devops-configurations.html)
 - Continuous Integration
 - Continuous Deployment
 
