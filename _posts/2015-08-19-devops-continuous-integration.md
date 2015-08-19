@@ -44,22 +44,24 @@ Integration means merging your code with the code of the others. Doing this in s
 All Integrations are stored on a central server, e.g. GitHub, Bitbucket or Gitlab and on your local machine.
 
 A Build Server continuously reacts on new changes to the code base. After it is triggered it:
- * downloads the latest code
-* installs any new dependencies
-* builds your app
-* runs your Unit Tests
-* runs your Integration Tests (e.g. KIF, UI Tests)
-* notifies you if any failures occurred
+
+- downloads the latest code
+- installs any new dependencies
+- builds your app
+- runs your Unit Tests
+- runs your Integration Tests (e.g. KIF, UI Tests)
+- notifies you if any failures occurred
 
 Because it is doing it so frequently you see failures immediately and are able to react to them.
 
 Some popular CI services that support iOS and Mac devlelopment are:
-* [Travis CI](http://travis-ci.org)
-* [Circle CI](http://circleci.com)
-* [Bitrise](http://bitrise.io)
-* [Ship.io](http://ship.io)
-* [Greenhouse](http://greenhouseci.com)
-* [Jenkins](https://jenkins-ci.org), [Bamboo](https://de.atlassian.com/software/bamboo) (self hosted)
+
+- [Travis CI](http://travis-ci.org)
+- [Circle CI](http://circleci.com)
+- [Bitrise](http://bitrise.io)
+- [Ship.io](http://ship.io)
+- [Greenhouse](http://greenhouseci.com)
+- [Jenkins](https://jenkins-ci.org), [Bamboo](https://de.atlassian.com/software/bamboo) (self hosted)
 
 I encourage you to try some of these out and find the one that best suits your needs and budget.
 
