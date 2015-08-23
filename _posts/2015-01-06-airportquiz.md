@@ -2,9 +2,9 @@
 category: app
 title: "AirportQuiz"
 icon: "/assets/AirportQuiz.svg"
-app_store_link: "https://itunes.apple.com/us/app/airport-quiz/id898891728?ls=1&mt=8"
+app_store_link: "http://www.airportquiz.rocks"
 ---
 
-## What can I say? I am ruling it.
+## AirportQuiz — Best Trivia Game for frequent Flyers in Store!
 
-@daehn, #1 in all AirportQuiz leaderboards
+No matter if you are a globetrotter or just curious. With AirportQuiz you can easily improve your knowledge of the world's Airports. More than 3000 Aiport Codes from all over the world.
