@@ -1,13 +1,16 @@
 <div class="apps">
-  <h1 class="apps-header">World-class apps with world-class customers</h1>
   {% for post in site.categories.app %}
-    <div class="app">
-      <a class="app-icon-link" href="{{ post.app_store_link }}">
-        <object class="app-icon" type="image/svg+xml" data={{ post.icon }}></object>
-      </a>
-      <div class="app-quote">
-        {{ post.content }}
-      </div>
+    <div class="app-container">
+        <div class="app-thumb">
+            <a class="app-icon-link" href="{{ post.app_store_link }}">
+                <img class="app-icon" src="{{ post.icon }}" alt="app icon"/>
+            </a>
+        </div>
+        <div class="app-content">
+             <a class="app-description-link" href="{{ post.app_store_link }}">
+                 {{ post.content }}
+            </a>
+        </div>
   	</div>
   {% endfor %}
 </div>

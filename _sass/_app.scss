@@ -1,28 +1,52 @@
-div.apps {
-  padding-top: 3em;
+.app-container {
+    margin: 20px 20px 0 0;
+    overflow: auto
 }
 
-h1.apps-header {
-  font-family: $highlight-font-family;
-  text-align: center;
+.app-content {
+    margin-left: 210px;
+
+    @include media-query($on-palm) {
+        margin-left: auto;
+        margin-right: auto;
+        display: inline-block;
+        text-align: center;
+    }
 }
 
-div.app {
-  display: inline-block;
-  width: 100%;
-  margin-bottom: 3em;
+.app-title {
+    font-weight: bold;
+    font-size: 200%
 }
 
-.app-quote {
-  padding-top: 2em;
-  text-align: center;
-  color: #000;
+.app-thumb img {
+    float: left;
+    @include media-query($on-palm) {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    display: block;
+    max-width: 180px;
+    max-height: 180px;
 }
 
-.app-icon-link {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 25%;
-  height: 25%;
+.app-description-link:link {
+    text-decoration: none;
+    color: $text-color;
+}
+
+.app-description-link:visited {
+    text-decoration: none;
+    color: $text-color;
+}
+
+.app-description-link:hover {
+    text-decoration: none;
+    color: $text-color;
+}
+
+.app-description-link:active {
+    text-decoration: none;
+    color: $text-color;
 }
