@@ -1,7 +1,11 @@
 machine:
   ruby:
-    version: 2.2.2
+    version: 2.4.0
 test:
   override:
     - bundle exec jekyll build
-    - bundle exec htmlproof ./_site
+deployment:
+  prod:
+    branch: master
+    commands:
+      - aws s3 sync _site/ s3://nerdishbynature.com/ --delete --region eu-central-1
