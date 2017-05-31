@@ -1,6 +1,6 @@
 title: nerdish by nature
 email: piet@nerdishbynature.com
-url: "http://nerdishbynature.com"
+url: "https://nerdishbynature.com"
 github_username:  nerdishbynature
 markdown: kramdown
 exclude: [vendor]
