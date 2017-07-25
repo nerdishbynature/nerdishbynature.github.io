@@ -7,7 +7,7 @@
     {% endif %}
     {% for page in site.pages %}
       {% if page.title %}
-        <a class="footer-item" href="{{ page.url | prepend: site.baseurl }}">
+        <a class="footer-item" href="{{ page.path | prepend: site.baseurl }}index.html">
           <span class="username">{{ page.title }}</span>
         </a>
       {% endif %}
