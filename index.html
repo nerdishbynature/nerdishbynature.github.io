@@ -3,10 +3,11 @@ layout: default
 ---
 
 <div class="home">
-  {% for post in site.categories.vision %}
-    <blockquote class="vision">
-      {{ post.content }}
-    </blockquote>
+  {% for post in site.categories.post %}
+    <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+    <p>{{ post.date | date_to_long_string }}</p>
+    <article class="post-content">
+      {{ post.excerpt }}
+    </article>
   {% endfor %}
-  {% include apps.html %}
 </div>
