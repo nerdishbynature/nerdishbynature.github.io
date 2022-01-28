@@ -4,15 +4,13 @@ title: Legal
 permalink: /imprint/
 ---
 
-Piet Brauer
+Piet Brauer-Kallenberg
 
 Lehmbruckstr. 3
 
 10245 Berlin
 
 piet@nerdishbynature.com
-
-_Dieses Impressum gilt auch für die Facebookseite http://facebook.com/135490826546893_
 
 ### HAFTUNGSAUSSCHLUSS
 
