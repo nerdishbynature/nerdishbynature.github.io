@@ -1,9 +1,5 @@
 ---
-layout: post
 title: DevOps in the iOS World — Introduction
-category: post
-author_twitter: pietbrauer
-author_github: pietbrauer
 ---
 
 *DevOps* — You may have read this term in various links on HackerNews, job offers or conversations in your company and so did I. The sad thing is that I couldn't relate to the term and took it as a job title which combined development work and operations tasks in one person, but then a friend introduced me to the book [The Phoenix project](http://www.amazon.com/The-Phoenix-Project-Helping-Business/dp/0988262592).

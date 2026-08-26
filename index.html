@@ -1,13 +1,28 @@
 ---
 layout: default
+title: nerdish by nature
+description: >-
+  Small, focused iOS apps that keep your data on your device. Home of
+  AirportQuiz and YouUpload, by Piet Brauer-Kallenberg.
 ---
 
-<div class="home">
-  {% for post in site.categories.post %}
-    <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-    <p>{{ post.date | date_to_long_string }}</p>
-    <article class="post-content">
-      {{ post.excerpt }}
-    </article>
-  {% endfor %}
+<div class="hero">
+  <h1>Small apps, built properly.</h1>
+  <p>
+    I&rsquo;m Piet Brauer-Kallenberg, an independent developer. I make iOS apps
+    that do one thing, ask for nothing, and send your data nowhere. No accounts,
+    no analytics, no tracking &mdash; in any of them.
+  </p>
 </div>
+
+<ul class="apps">
+  {%- for app in site.data.apps -%}
+    <li class="app-card">
+      <img class="app-card__icon" src="{{ app.icon | relative_url }}"
+           alt="" width="76" height="76" loading="lazy">
+      <h2><a href="{{ app.url | relative_url }}">{{ app.title }}</a></h2>
+      <p>{{ app.blurb }}</p>
+      <p class="app-card__meta">{{ app.status }}</p>
+    </li>
+  {%- endfor -%}
+</ul>

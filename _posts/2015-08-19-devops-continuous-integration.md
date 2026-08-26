@@ -1,9 +1,5 @@
 ---
-layout: post
 title: DevOps in the iOS World - Continuous Integration
-category: post
-author_twitter: pietbrauer
-author_github: pietbrauer
 ---
 
 Continuous integration should be a crucial part in every developers daily workflow. Some time ago most iOS Developers never heard of it, except they came from another platform. That luckily changed but I still see exceptions.

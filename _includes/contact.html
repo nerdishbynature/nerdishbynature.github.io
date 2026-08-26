@@ -1,0 +1,9 @@
+{%- comment -%}
+  Renders a mail link whose address exists nowhere in the HTML source.
+  Pass `text` for the label, `subject` to prefill, and `reveal` to swap the
+  button for the readable address instead of opening a mail client.
+{%- endcomment -%}
+<button type="button" class="contact-link"
+        data-a="grvc" data-b="zbp.rehgnaloufvqera"
+        {% if include.subject %}data-subject="{{ include.subject }}"{% endif %}
+        {% if include.reveal %}data-reveal{% endif %}>{{ include.text | default: "email me" }}</button>

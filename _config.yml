@@ -1,8 +1,48 @@
 title: nerdish by nature
-email: piet@nerdishbynature.com
+tagline: Small, private iOS apps by Piet Brauer-Kallenberg
+description: >-
+  nerdish by nature builds small, focused iOS apps that keep your data on
+  your device. Home of AirportQuiz and YouUpload.
 url: "https://nerdishbynature.com"
-github_username:  nerdishbynature
+lang: en
+
+author:
+  name: Piet Brauer-Kallenberg
+
+github_username: nerdishbynature
+
+# Preserves the URLs the 2015 posts were published under.
+permalink: /post/:year/:month/:day/:title.html
+
 markdown: kramdown
-exclude: [vendor]
-gems:
-  - jekyll-mentions
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  hard_wrap: false
+
+sass:
+  style: compressed
+  sourcemap: never
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+feed:
+  path: feed.xml
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+  - .github
+  - .jekyll-cache

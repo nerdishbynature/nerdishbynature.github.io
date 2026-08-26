@@ -1,16 +1,12 @@
-<header class="site-header">
-  <div class="wrapper">
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
-    <nav class="site-nav">
-      <div class="trigger">
-        {% for page in site.pages %}
-          {% if page.title %}
-            {% if page.title != "Legal" %}
-              <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-            {% endif %}
-          {% endif %}
-        {% endfor %}
-      </div>
+<header class="masthead">
+  <div class="wrap">
+    <a class="masthead__title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+    <nav aria-label="Primary">
+      {%- assign nav = site.data.navigation -%}
+      {%- for item in nav -%}
+        <a href="{{ item.url | relative_url }}"
+           {% if page.url == item.url %}aria-current="page"{% endif %}>{{ item.title }}</a>
+      {%- endfor -%}
     </nav>
   </div>
 </header>
