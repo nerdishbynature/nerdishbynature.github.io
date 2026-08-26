@@ -13,3 +13,11 @@
     Put a video on YouTube straight from your iPhone. No laptop, no re-encoding,
     no account with anyone but Google.
   status: Coming to the App Store
+
+- title: MyRoads
+  url: /myroads/
+  icon: /assets/img/myroads-icon.png
+  blurb: >-
+    Plan a road trip stop by stop. Real driving distances between every leg,
+    shared with whoever is coming along.
+  status: Coming to the App Store
