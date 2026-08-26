@@ -1,0 +1,121 @@
+---
+layout: page
+permalink: /myroads/privacy/
+title: MyRoads Privacy Policy
+description: >-
+  MyRoads has no server and no analytics. Trips stay on your device and in
+  your own iCloud account, and the suggestion features run on-device.
+updated: 2026-08-26
+---
+
+<p class="updated">Last updated {{ page.updated | date: "%-d %B %Y" }}</p>
+
+<p>
+  MyRoads stores your trips on your device and in your own iCloud account.
+  It has no server of its own, no account system, no analytics, no crash
+  reporting and no third-party SDKs. Nothing you do in the app is sent to the
+  developer.
+</p>
+
+<h2>What the app stores</h2>
+
+<ul>
+  <li>
+    <strong>Your trips.</strong> The stops you add, their order, their names and
+    coordinates, your route preferences, and any notes attached to them. These
+    are kept in a database on your device.
+  </li>
+  <li>
+    <strong>An iCloud copy.</strong> If you are signed in to iCloud, that
+    database syncs through Apple&rsquo;s CloudKit to your own private iCloud
+    account, so your trips appear on your other devices. It is your iCloud
+    storage and your Apple Account &mdash; the developer has no access to it.
+  </li>
+  <li>
+    <strong>Cached routes.</strong> Distances, travel times and route shapes are
+    cached on your device so the app does not have to ask for the same route
+    twice.
+  </li>
+</ul>
+
+<h2>Maps and route calculation</h2>
+
+<p>
+  When you search for a place, or when the app works out the driving route
+  between two stops, that request goes to Apple&rsquo;s mapping service &mdash;
+  the same service the built-in Maps app uses. Apple describes how it handles
+  these requests in the
+  <a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a>.
+  These requests do not pass through any server of mine.
+</p>
+
+<h2>Suggestions are generated on your device</h2>
+
+<p>
+  The trip narrative, the travel tips for a place and the trip name suggestions
+  are produced by Apple&rsquo;s on-device foundation model, running locally on
+  your iPhone or iPad. Your trip details are not uploaded to generate them, and
+  no prompt or result is sent to the developer or to any third party. If a
+  device does not support the on-device model, these features are simply
+  unavailable and the rest of the app is unaffected.
+</p>
+
+<h2>Sharing a trip</h2>
+
+<p>
+  If you share a trip, it is shared through Apple&rsquo;s CloudKit sharing.
+  The people you invite can see &mdash; and, if you allow it, edit &mdash; the
+  stops and details of that one trip. Apple handles the invitation and the
+  access; the developer is not party to it and cannot see shared trips. You can
+  stop sharing at any time in the app, which revokes their access.
+</p>
+
+<h2>The share extension</h2>
+
+<p>
+  When you send something into MyRoads from another app, that content is handed
+  to the extension by iOS and saved into the trip you pick. It is stored the
+  same way as anything else in the app, and goes nowhere else.
+</p>
+
+<h2>What the developer receives</h2>
+
+<p>
+  Nothing. There is no backend and no telemetry. The developer cannot see your
+  trips, your location, your iCloud account, or whether you use the app at all.
+</p>
+
+<h2>Removing your data</h2>
+
+<ul>
+  <li>Deleting a trip in the app removes it from your device and from iCloud.</li>
+  <li>Deleting the app removes its local copy.</li>
+  <li>
+    Data held in iCloud is managed in Settings under your Apple Account, where
+    MyRoads can be turned off or its iCloud data deleted.
+  </li>
+  <li>Turning off sharing on a trip revokes access for everyone you invited.</li>
+</ul>
+
+<h2>Children</h2>
+
+<p>
+  MyRoads is suitable for all ages and collects no data from anyone. iCloud
+  accounts are subject to Apple&rsquo;s own age requirements.
+</p>
+
+<h2>Changes</h2>
+
+<p>
+  If this policy changes, the revised version will be posted at this address
+  with an updated date.
+</p>
+
+<h2>Contact</h2>
+
+<p>
+  Questions about this policy?
+  {% include contact.html text="Send a message" subject="MyRoads privacy policy" %}.
+  The postal address of the developer is on the
+  <a href="{{ '/imprint/' | relative_url }}">imprint page</a>.
+</p>
