@@ -1,19 +1,9 @@
-<footer class="site-footer">
-  <div class="wrapper">
-    {% if site.github_username %}
-      <a class="footer-item" href="https://github.com/{{ site.github_username }}">
-        <span class="username">GitHub</span>
-      </a>
-    {% endif %}
-    {% for page in site.pages %}
-      {% if page.title %}
-        <a class="footer-item" href="{{ page.url | prepend: site.baseurl }}index.html">
-          <span class="username">{{ page.title }}</span>
-        </a>
-      {% endif %}
-    {% endfor %}
-    <a class="footer-item" href="{{ site.url }}/feed.xml">
-      <span class="username">RSS</span>
-    </a>
+<footer class="colophon">
+  <div class="wrap">
+    <span>&copy; {{ 'now' | date: "%Y" }} Piet Brauer-Kallenberg</span>
+    <span class="colophon__spacer"></span>
+    <a href="{{ '/imprint/' | relative_url }}">Imprint &amp; Privacy</a>
+    <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
+    <a href="https://github.com/{{ site.github_username }}" rel="me">GitHub</a>
   </div>
 </footer>

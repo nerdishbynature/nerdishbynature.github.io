@@ -1,0 +1,107 @@
+---
+layout: page
+permalink: /youupload/privacy/
+title: YouUpload Privacy Policy
+description: >-
+  YouUpload has no server, no analytics and no third-party SDKs. Your videos
+  go from your device straight to your own YouTube account.
+updated: 2026-08-26
+---
+
+<p class="updated">Last updated {{ page.updated | date: "%-d %B %Y" }}</p>
+
+<p>
+  YouUpload uploads videos from your device to your own YouTube account. It has
+  no server of its own. Nothing you do in the app is sent to the developer, and
+  the app contains no analytics, no crash reporting and no third-party SDKs of
+  any kind.
+</p>
+
+<h2>What the app stores on your device</h2>
+
+<ul>
+  <li>
+    <strong>Videos you import.</strong> Videos you add from your photo library
+    or from Files are copied into the app&rsquo;s own storage so they can be
+    uploaded. They stay on your device until you delete them in the app or
+    delete the app.
+  </li>
+  <li>
+    <strong>Your Google sign-in.</strong> When you sign in, Google issues the
+    app an access token and a refresh token. These are kept in the iOS Keychain
+    on your device. They are never transmitted anywhere except back to Google
+    when the app refreshes your session.
+  </li>
+</ul>
+
+<h2>What the app sends, and to whom</h2>
+
+<p>
+  The only service YouUpload communicates with is Google. When you upload a
+  video, the video file and the details you entered &mdash; title, description,
+  tags, category and visibility &mdash; are sent directly from your device to
+  the YouTube Data API, using the account you signed in with. The app also asks
+  YouTube for the list of video categories so it can show them to you.
+</p>
+
+<p>
+  Your use of YouTube is governed by
+  <a href="https://policies.google.com/privacy">Google&rsquo;s Privacy Policy</a>
+  and the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>.
+</p>
+
+<h2>What the developer receives</h2>
+
+<p>
+  Nothing. There is no backend, no account system and no telemetry. The
+  developer cannot see your videos, your Google account, or whether you use the
+  app at all.
+</p>
+
+<h2>Notifications</h2>
+
+<p>
+  If you allow notifications, the app posts one locally when an upload finishes
+  or fails. These are generated on your device and are not sent through any
+  server.
+</p>
+
+<h2>Removing your data</h2>
+
+<ul>
+  <li>Signing out deletes the stored tokens from the Keychain immediately.</li>
+  <li>Deleting a video in the app removes it from your device.</li>
+  <li>Deleting the app removes everything it stored.</li>
+  <li>
+    You can revoke the app&rsquo;s access to your Google account at any time at
+    <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.
+  </li>
+  <li>
+    Videos already uploaded live in your YouTube account and are managed there,
+    not by this app.
+  </li>
+</ul>
+
+<h2>Children</h2>
+
+<p>
+  YouUpload is not directed at children and collects no data from anyone.
+  Uploading to YouTube requires a Google account subject to Google&rsquo;s own
+  age requirements.
+</p>
+
+<h2>Changes</h2>
+
+<p>
+  If this policy changes, the revised version will be posted at this address
+  with an updated date.
+</p>
+
+<h2>Contact</h2>
+
+<p>
+  Questions about this policy?
+  {% include contact.html text="Send a message" subject="YouUpload privacy policy" %}.
+  The postal address of the developer is on the
+  <a href="{{ '/imprint/' | relative_url }}">imprint page</a>.
+</p>

@@ -1,0 +1,30 @@
+---
+layout: default
+---
+<article style="--accent: {{ page.accent }};">
+  <div class="app-hero">
+    <img class="app-hero__icon" src="{{ page.icon | relative_url }}"
+         alt="{{ page.title }} app icon" width="128" height="128">
+    <div>
+      <h1>{{ page.title }}</h1>
+      <p class="app-hero__tagline">{{ page.subtitle }}</p>
+      {%- if page.app_store_url -%}
+        <a class="badge" href="{{ page.app_store_url }}">Download on the App Store</a>
+      {%- else -%}
+        <span class="badge">{{ page.status | default: "Coming to the App Store" }}</span>
+      {%- endif -%}
+    </div>
+  </div>
+
+  {%- if page.screenshots and page.screenshots.size > 0 -%}
+    <div class="shots">
+      {%- for shot in page.screenshots -%}
+        <img src="{{ shot.src | relative_url }}" alt="{{ shot.alt }}" loading="lazy">
+      {%- endfor -%}
+    </div>
+  {%- endif -%}
+
+  <div class="prose post-body">
+    {{ content }}
+  </div>
+</article>

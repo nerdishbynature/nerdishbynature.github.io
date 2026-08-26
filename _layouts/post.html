@@ -1,25 +1,23 @@
 ---
 layout: default
 ---
-<div class="post">
-
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{% if page.author_twitter %} @{{ page.author_twitter }} wrote this on {% endif %}{{ page.date | date: "%b %-d, %Y" }}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+<article class="prose">
+  <header class="page-header">
+    <h1>{{ page.title }}</h1>
+    <p class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">
+        {{ page.date | date: "%-d %B %Y" }}
+      </time>
+    </p>
   </header>
 
-  <article class="post-content">
+  <div class="post-body">
     {{ content }}
-  </article>
+  </div>
 
-  {% if page.author_twitter %}
-    <a href="https://twitter.com/{{page.author_twitter}}" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @{{ page.author_twitter }}</a>
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-  {% endif %}
+  <hr>
 
-  {% if page.author_github %}
-    <a class="github-button" href="https://github.com/{{ page.author_github }}" data-style="mega" aria-label="Follow @{{ page.author_github }} on GitHub">Follow @{{ page.author_github }}</a>
-    <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
-  {% endif %}
-
-</div>
+  <p class="post-meta">
+    <a href="{{ '/blog/' | relative_url }}">&larr; All writing</a>
+  </p>
+</article>

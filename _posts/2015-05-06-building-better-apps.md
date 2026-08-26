@@ -1,9 +1,5 @@
 ---
-layout: post
 title: Building better apps
-category: post
-author_twitter: pietbrauer
-author_github: pietbrauer
 ---
 
 As a kid I always loved to watch the James Bond movies. Mostly because of his gadgets. I am pretty young still so I started watching the movies when Pierce Brosnan was the protagonist.

@@ -1,9 +1,5 @@
 ---
-layout: post
 title: DevOps in the iOS World — Streamline Configurations
-category: post
-author_twitter: pietbrauer
-author_github: pietbrauer
 ---
 
 
