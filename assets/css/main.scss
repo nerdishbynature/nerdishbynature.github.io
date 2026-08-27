@@ -210,9 +210,36 @@ main { flex: 1 0 auto; padding-block: clamp(2.5rem, 6vw, 4.5rem); }
   margin-bottom: 0;
 }
 
-/* ------------------------------------------------------------- app cards */
+/* -------------------------------------------------------------- sections */
 
-.apps {
+.section { margin-bottom: clamp(2.5rem, 6vw, 4rem); }
+
+.section__title {
+  margin: 0 0 0.35em;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.section__lede {
+  color: var(--ink-soft);
+  margin: 0 0 1.4rem;
+  max-width: 36rem;
+}
+
+.section__more {
+  margin: 1.4rem 0 0;
+  font-size: 0.9375rem;
+}
+
+.section__more a { text-decoration: none; }
+.section__more a:hover { text-decoration: underline; }
+
+/* ----------------------------------------------------------------- cards */
+
+.card-grid {
   display: grid;
   gap: clamp(1.25rem, 3vw, 2rem);
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
@@ -221,7 +248,7 @@ main { flex: 1 0 auto; padding-block: clamp(2.5rem, 6vw, 4.5rem); }
   margin: 0;
 }
 
-.app-card {
+.card {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -233,44 +260,52 @@ main { flex: 1 0 auto; padding-block: clamp(2.5rem, 6vw, 4.5rem); }
   transition: border-color 0.15s ease, transform 0.15s ease;
 }
 
-.app-card:hover {
+.card:hover {
   border-color: color-mix(in srgb, var(--accent) 45%, var(--rule));
   transform: translateY(-2px);
 }
 
-.app-card__icon {
+.card__icon {
   width: 76px;
   height: 76px;
   border-radius: 17px;
   box-shadow: 0 1px 3px rgb(0 0 0 / 0.16);
 }
 
-.app-card h2 {
+.card h2 {
   margin: 0;
   font-size: 1.3rem;
 }
 
-.app-card h2 a {
+.card h2 a {
   color: var(--ink);
   text-decoration: none;
 }
 
 /* Makes the whole card clickable without nesting interactive elements. */
-.app-card h2 a::after {
+.card h2 a::after {
   content: "";
   position: absolute;
   inset: 0;
   border-radius: inherit;
 }
 
-.app-card:hover h2 a { color: var(--accent); }
+.card:hover h2 a { color: var(--accent); }
 
-.app-card p {
+.card p {
   margin: 0;
   color: var(--ink-soft);
 }
 
-.app-card__meta {
+.card__thumb {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 12px;
+  background: var(--bg);
+}
+
+.card__meta {
   margin-top: auto;
   padding-top: 0.25rem;
   font-size: 0.875rem;

@@ -2,3 +2,6 @@
 _site
 .sass-cache
 .jekyll-cache
+
+# Saved MakerWorld pages, used only as a scraping source
+Piet-MakerWorld*
