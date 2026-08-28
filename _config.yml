@@ -40,6 +40,10 @@ defaults:
       layout: post
 
 exclude:
+  # Saved MakerWorld pages used as a data source; never part of the site.
+  - Piet-MakerWorld
+  - Piet-MakerWorld.htm
+  - Piet-MakerWorld_files
   - Gemfile
   - Gemfile.lock
   - README.md

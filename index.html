@@ -2,27 +2,63 @@
 layout: default
 title: nerdish by nature
 description: >-
-  Small, focused iOS apps that keep your data on your device. Home of
-  AirportQuiz and YouUpload, by Piet Brauer-Kallenberg.
+  iOS apps that keep your data on your device, and free 3D printable mounts
+  for 12V and van-conversion builds. By Piet Brauer-Kallenberg.
 ---
 
 <div class="hero">
-  <h1>Small apps, built properly.</h1>
+  <h1>Things I make.</h1>
   <p>
-    I&rsquo;m Piet Brauer-Kallenberg, an independent developer. I make iOS apps
-    that do one thing, ask for nothing, and send your data nowhere. No accounts,
-    no analytics, no tracking &mdash; in any of them.
+    I&rsquo;m Piet Brauer-Kallenberg, an independent developer. I write iOS apps
+    that do one thing, ask for nothing, and send your data nowhere &mdash; and
+    when a problem is better solved in plastic than in software, I design and
+    print it instead.
   </p>
 </div>
 
-<ul class="apps">
-  {%- for app in site.data.apps -%}
-    <li class="app-card">
-      <img class="app-card__icon" src="{{ app.icon | relative_url }}"
-           alt="" width="76" height="76" loading="lazy">
-      <h2><a href="{{ app.url | relative_url }}">{{ app.title }}</a></h2>
-      <p>{{ app.blurb }}</p>
-      <p class="app-card__meta">{{ app.status }}</p>
-    </li>
-  {%- endfor -%}
-</ul>
+<section class="section">
+  <h2 class="section__title">Apps</h2>
+
+  <ul class="card-grid">
+    {%- for app in site.data.apps -%}
+      <li class="card">
+        <img class="card__icon" src="{{ app.icon | relative_url }}"
+             alt="" width="76" height="76" loading="lazy">
+        <h2><a href="{{ app.url | relative_url }}">{{ app.title }}</a></h2>
+        <p>{{ app.blurb }}</p>
+        <p class="card__meta">{{ app.status }}</p>
+      </li>
+    {%- endfor -%}
+  </ul>
+</section>
+
+<section class="section">
+  <h2 class="section__title">Making</h2>
+
+  <p class="section__lede">
+    Printable mounts and brackets for 12V electrical fit-outs &mdash; van
+    conversions, mobile routers, switch panels. Free to download from
+    MakerWorld.
+  </p>
+
+  {%- assign featured = site.data.making | slice: 0, 3 -%}
+  {%- if featured and featured.size > 0 -%}
+    <ul class="card-grid">
+      {%- for item in featured -%}
+        <li class="card">
+          {%- if item.image %}
+            <img class="card__thumb" src="{{ item.image | relative_url }}"
+                 alt="" loading="lazy">
+          {% endif -%}
+          <h2><a href="{{ item.url }}">{{ item.title }}</a></h2>
+          <p>{{ item.blurb }}</p>
+          <p class="card__meta">{{ item.meta | default: "On MakerWorld" }}</p>
+        </li>
+      {%- endfor -%}
+    </ul>
+  {%- endif -%}
+
+  <p class="section__more">
+    <a href="{{ '/making/' | relative_url }}">All designs &rarr;</a>
+  </p>
+</section>

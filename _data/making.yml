@@ -1,0 +1,45 @@
+# Designs shown on /making/, and the first three on the front page.
+# Ordered by downloads, so the strongest three lead.
+#
+#   title  the model's name, as published
+#   url    its MakerWorld page — the canonical home, where downloads happen
+#   blurb  what it is and what it's for. The only original text on the page,
+#          so it is what the section actually ranks on. Be specific.
+#   image  optional cover under /assets/img/. Cards read fine without one.
+#   meta   optional, overrides the default "On MakerWorld" footer line
+
+- title: Universal 12V USB & Power Socket Wall Mount
+  url: https://makerworld.com/en/models/2566357-universal-12v-usb-power-socket-wall-mount
+  image: /assets/img/making-power-socket.jpg
+  blurb: >-
+    An angled bracket that holds a standard round 12V or USB socket where there
+    is no panel to cut into — van conversions, boat lockers, a workshop bench.
+    Screws to any flat surface.
+
+- title: TP-Link M8550 5G Router Wall Mount
+  url: https://makerworld.com/en/models/2509884-tp-link-m8550-5g-router-wall-mount
+  image: /assets/img/making-tplink-router.jpg
+  blurb: >-
+    A wall cradle for the TP-Link M8550 5G router, so the mobile connection
+    lives somewhere fixed instead of sliding around a shelf.
+
+- title: UniFi Travel Router Wall Mount
+  url: https://makerworld.com/en/models/2586948-unifi-travel-router-wall-mount
+  image: /assets/img/making-unifi-router.jpg
+  blurb: >-
+    Holds a UniFi travel router flat against the wall with the ports left clear.
+    Corner clips let you pull it back out without tools.
+
+- title: Low-Profile 6-Gang Switch Panel Mount
+  url: https://makerworld.com/en/models/2566329-low-profile-6-gang-switch-panel-mount
+  image: /assets/img/making-switch-panel.jpg
+  blurb: >-
+    A wedge housing that sets a six-gang switch panel at a readable angle while
+    sitting as flat to the surface as the switches allow.
+
+- title: Eco-Worthy FlexFit 100Ah Battery Tray
+  url: https://makerworld.com/en/models/2566229-eco-worthy-flexfit-100ah-battery-tray
+  image: /assets/img/making-battery-tray.jpg
+  blurb: >-
+    A tray for the Eco-Worthy FlexFit 100Ah battery, with a honeycomb floor for
+    airflow and raised feet to keep it clear of whatever it stands on.

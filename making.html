@@ -1,0 +1,33 @@
+---
+layout: page
+permalink: /making/
+title: Making
+description: >-
+  Free 3D printable mounts and brackets for 12V electrical fit-outs: van
+  conversion sockets, router wall mounts, switch panels and battery trays.
+subtitle: >-
+  Printable mounts and brackets for 12V electrical fit-outs — van conversions,
+  mobile routers, switch panels. All free to download from MakerWorld.
+---
+
+{%- if site.data.making and site.data.making.size > 0 -%}
+  <ul class="card-grid">
+    {%- for item in site.data.making -%}
+      <li class="card">
+        {%- if item.image %}
+          <img class="card__thumb" src="{{ item.image | relative_url }}"
+               alt="" loading="lazy">
+        {% endif -%}
+        <h2><a href="{{ item.url }}">{{ item.title }}</a></h2>
+        <p>{{ item.blurb }}</p>
+        <p class="card__meta">{{ item.meta | default: "On MakerWorld" }}</p>
+      </li>
+    {%- endfor -%}
+  </ul>
+{%- endif -%}
+
+<p>
+  Everything lives on
+  <a href="https://makerworld.com/@pietbrauer">my MakerWorld profile</a>, which
+  is where downloads, print profiles and remixes are handled.
+</p>
