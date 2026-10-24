@@ -18,8 +18,6 @@
   --ink-soft: #3d4049;
   --ink-mute: #80838c;
   --rule: #d9dad4;
-  --grid-fine: rgba(47, 91, 255, 0.06);
-  --grid-bold: rgba(47, 91, 255, 0.11);
   --blue: #2f5bff;
   --blue-deep: #1b3fd1;
   --sans: "Inter", system-ui, -apple-system, sans-serif;
@@ -35,13 +33,9 @@ body {
   font: 400 16.5px/1.6 var(--sans);
   -webkit-font-smoothing: antialiased;
   background-color: var(--paper);
-  /* millimeter paper: 8px fine grid, 40px bold grid */
-  background-image:
-    linear-gradient(var(--grid-bold) 1px, transparent 1px),
-    linear-gradient(90deg, var(--grid-bold) 1px, transparent 1px),
-    linear-gradient(var(--grid-fine) 1px, transparent 1px),
-    linear-gradient(90deg, var(--grid-fine) 1px, transparent 1px);
-  background-size: 40px 40px, 40px 40px, 8px 8px, 8px 8px;
+  /* millimeter paper: 8px fine grid, 40px bold grid, as a single SVG tile
+     (cheaper to rasterize while scrolling than stacked gradients) */
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40'><g fill='%232f5bff' fill-opacity='.06'><rect x='8' width='1' height='40'/><rect y='8' width='40' height='1'/><rect x='16' width='1' height='40'/><rect y='16' width='40' height='1'/><rect x='24' width='1' height='40'/><rect y='24' width='40' height='1'/><rect x='32' width='1' height='40'/><rect y='32' width='40' height='1'/></g><g fill='%232f5bff' fill-opacity='.163'><rect width='1' height='40'/><rect width='40' height='1'/></g></svg>");
 }
 
 #nozzle {
@@ -58,6 +52,7 @@ body {
   white-space: pre;
   opacity: 0;
   transition: opacity 0.2s ease;
+  will-change: transform, opacity;
 }
 .page { position: relative; z-index: 1; }
 
@@ -70,9 +65,7 @@ header.top {
   position: sticky;
   top: 0;
   z-index: 10;
-  background: color-mix(in srgb, var(--paper) 88%, transparent);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  background: var(--paper);
   border-bottom: 1px solid var(--ink);
 }
 header.top .wrap {
@@ -313,10 +306,7 @@ section { padding: 104px 0; }
 .quote-section {
   background: var(--ink);
   color: #c9ccd4;
-  background-image:
-    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
-  background-size: 40px 40px;
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40'><g fill='%23fff' fill-opacity='.05'><rect width='1' height='40'/><rect width='40' height='1'/></g></svg>");
 }
 .quote-section h2 { color: #fff; }
 .quote-section .label { color: #8aa2ff; }
