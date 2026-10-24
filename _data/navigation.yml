@@ -1,5 +1,7 @@
 # /blog/ is deliberately absent: the 2015 writing stays published and indexed,
 # it just isn't advertised in the nav. Add it back here to surface it again.
+- title: Apps
+  url: /apps/
 - title: AirportQuiz
   url: /airportquiz/
 - title: YouUpload

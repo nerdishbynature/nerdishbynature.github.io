@@ -1,64 +1,339 @@
----
-layout: default
-title: nerdish by nature
-description: >-
-  iOS apps that keep your data on your device, and free 3D printable mounts
-  for 12V and van-conversion builds. By Piet Brauer-Kallenberg.
----
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>nerdish by nature – 3D-Druck auf Anfrage</title>
+  <meta name="description" content="3D-Druck auf Anfrage: Ersatzteile, Prototypen und Kleinserien aus PLA, PETG, ASA und TPU. Projekt beschreiben, Festpreis erhalten.">
+  <meta name="theme-color" content="#f3f3ef">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%230f1115'/><path d='M7 11h18M9 16h14M11 21h10' stroke='%232f5bff' stroke-width='3'/></svg>">
+  <link rel="preload" href="/assets/druck/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/druck/style.css">
+  <link rel="canonical" href="https://nerdishbynature.com/">
+</head>
+<body>
+  <div id="nozzle" aria-hidden="true"></div>
 
-<div class="hero">
-  <h1>Things I make.</h1>
-  <p>
-    I&rsquo;m Piet Brauer-Kallenberg, an independent developer. I write iOS apps
-    that do one thing, ask for nothing, and send your data nowhere &mdash; and
-    when a problem is better solved in plastic than in software, I design and
-    print it instead.
-  </p>
-</div>
+  <div class="page">
+    <header class="top">
+      <div class="wrap">
+        <a class="logo" href="/"><span class="mark"><i></i><i></i><i></i></span>nerdish by nature<span class="tag">3D-Druck</span></a>
+        <nav class="main" aria-label="Hauptnavigation">
+          <a href="#leistungen">Leistungen</a>
+          <a href="#ablauf">Ablauf</a>
+          <a href="#materialien">Materialien</a>
+          <a href="#faq">FAQ</a>
+          <a class="cta" href="#anfrage">Anfrage<span class="cta-arrow"> →</span></a>
+        </nav>
+      </div>
+    </header>
 
-<section class="section">
-  <h2 class="section__title">Apps</h2>
+    <main>
+      <section class="hero">
+        <div class="wrap">
+          <div>
+            <span class="label">3D-Druck · Einzelstück bis Kleinserie</span>
+            <h1>Du hast die Idee. Ich hab den <em>Drucker.</em></h1>
+            <p class="lead">Ob Ersatzteil, Halterung, Gehäuse oder Prototyp: Beschreib mir kurz, was du brauchst. Du bekommst einen Festpreis und am Ende ein Teil, das passt.</p>
+            <div class="btns">
+              <a class="btn primary" href="#anfrage">Projekt beschreiben <span class="arrow" aria-hidden="true">→</span></a>
+              <a class="btn" href="#materialien">Materialien ansehen</a>
+            </div>
+          </div>
 
-  <ul class="card-grid">
-    {%- for app in site.data.apps -%}
-      <li class="card">
-        <img class="card__icon" src="{{ app.icon | relative_url }}"
-             alt="" width="76" height="76" loading="lazy">
-        <h2><a href="{{ app.url | relative_url }}">{{ app.title }}</a></h2>
-        <p>{{ app.blurb }}</p>
-        <p class="card__meta">{{ app.status }}</p>
-      </li>
-    {%- endfor -%}
-  </ul>
-</section>
+          <aside class="spec" aria-label="Druckparameter">
+            <div class="spec-head"><span>DATENBLATT</span><span>REV. 2026</span></div>
+            <dl>
+              <div class="r"><dt>Drucker</dt><dd>Bambu Lab H2S</dd></div>
+              <div class="r"><dt>Bauraum</dt><dd>340 × 320 × 340 mm</dd></div>
+              <div class="r"><dt>Düsen</dt><dd>0,4 – 0,8 mm</dd></div>
+              <div class="r"><dt>Schichthöhe</dt><dd>ab 0,08 mm</dd></div>
+              <div class="r"><dt>Maßtoleranz</dt><dd>± 0,2 mm</dd></div>
+              <div class="r"><dt>Materialien</dt><dd>PLA · PETG · ASA · TPU</dd></div>
+              <div class="r"><dt>Dateiformate</dt><dd>STL · STEP · 3MF</dd></div>
+              <div class="r"><dt>Antwortzeit</dt><dd>1 – 2 Werktage</dd></div>
+            </dl>
+            <div class="spec-foot">● Status: nimmt Aufträge an</div>
+          </aside>
+        </div>
+      </section>
 
-<section class="section">
-  <h2 class="section__title">Making</h2>
+      <section id="leistungen">
+        <div class="wrap">
+          <div class="section-head">
+            <div>
+              <span class="label">Leistungen</span>
+              <h2>Was hier aus der Düse kommt.</h2>
+            </div>
+            <p>Keine Massenware, sondern Teile für einen ganz bestimmten Zweck. Oft sind das Dinge, die man so nirgends kaufen kann.</p>
+          </div>
+          <div class="services">
+            <div class="service">
+              <span class="idx">01</span>
+              <h3>Ersatzteile</h3>
+              <p>Ein Clip ist abgebrochen, eine Abdeckung verloren oder der Hersteller liefert nichts mehr nach? Ich messe das Teil aus, konstruiere es neu und drucke es.</p>
+            </div>
+            <div class="service">
+              <span class="idx">02</span>
+              <h3>Prototypen</h3>
+              <p>Aus deinem CAD-Modell wird ein Teil zum Anfassen. So prüfst du Form, Passung und Funktion am echten Objekt, bevor du in Werkzeuge investierst.</p>
+            </div>
+            <div class="service">
+              <span class="idx">03</span>
+              <h3>Kleinserien</h3>
+              <p>Ob 10, 50 oder 300 Stück: Jedes Teil ist gleich, und teure Spritzgussformen brauchst du nicht. Gut geeignet für Bastler, Vereine und kleine Betriebe.</p>
+            </div>
+            <div class="service">
+              <span class="idx">04</span>
+              <h3>Halterungen &amp; Organizer</h3>
+              <p>Wandhalter, Kabelführungen, Schubladeneinsätze oder Werkzeughalter, millimetergenau für deinen Platz gemacht.</p>
+            </div>
+            <div class="service">
+              <span class="idx">05</span>
+              <h3>Konstruktion</h3>
+              <p>Du hast keine Datei? Oft reicht eine Skizze mit Maßen oder ein Foto vom alten Teil. Das 3D-Modell erstelle ich dann für dich.</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-  <p class="section__lede">
-    Printable mounts and brackets for 12V electrical fit-outs &mdash; van
-    conversions, mobile routers, switch panels. Free to download from
-    MakerWorld.
-  </p>
+      <section id="ablauf">
+        <div class="wrap">
+          <div class="section-head">
+            <div>
+              <span class="label">Ablauf</span>
+              <h2>Vier Schritte, kein Papierkram.</h2>
+            </div>
+            <p>Du sagst, was du brauchst, um den Rest kümmere ich mich. Kosten entstehen erst, wenn du das Angebot annimmst.</p>
+          </div>
+          <ol class="process">
+            <li>
+              <span class="t">Schritt 1</span>
+              <h3>Anfrage</h3>
+              <p>Du füllst das Formular aus: was, wie viele und bis wann.</p>
+            </li>
+            <li>
+              <span class="t">Schritt 2</span>
+              <h3>Festpreis</h3>
+              <p>Ich prüfe, ob und womit es sich drucken lässt, und schicke dir innerhalb von 1–2 Werktagen einen Festpreis.</p>
+            </li>
+            <li>
+              <span class="t">Schritt 3</span>
+              <h3>Druck</h3>
+              <p>Ich drucke das Teil, entferne das Stützmaterial und kontrolliere die Maße.</p>
+            </li>
+            <li>
+              <span class="t">Schritt 4</span>
+              <h3>Übergabe</h3>
+              <p>Ich schicke es dir per Paket, oder du holst es nach Absprache ab.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
 
-  {%- assign featured = site.data.making | slice: 0, 3 -%}
-  {%- if featured and featured.size > 0 -%}
-    <ul class="card-grid">
-      {%- for item in featured -%}
-        <li class="card">
-          {%- if item.image %}
-            <img class="card__thumb" src="{{ item.image | relative_url }}"
-                 alt="" loading="lazy">
-          {% endif -%}
-          <h2><a href="{{ item.url }}">{{ item.title }}</a></h2>
-          <p>{{ item.blurb }}</p>
-          <p class="card__meta">{{ item.meta | default: "On MakerWorld" }}</p>
-        </li>
-      {%- endfor -%}
-    </ul>
-  {%- endif -%}
+      <section id="materialien">
+        <div class="wrap">
+          <div class="section-head">
+            <div>
+              <span class="label">Materialien</span>
+              <h2>Für jeden Zweck das passende Material.</h2>
+            </div>
+            <p>Du weißt nicht, welches Material passt? Schreib einfach in die Anfrage, wofür das Teil gedacht ist. Dann empfehle ich dir eins.</p>
+          </div>
+          <div class="mat-grid">
+            <div class="mat">
+              <div class="code">PLA</div>
+              <div class="bars">
+                <div class="bar"><span>Festigkeit</span><span style="--v:60%"></span></div>
+                <div class="bar"><span>Hitze</span><span style="--v:25%"></span></div>
+                <div class="bar"><span>Flexibilität</span><span style="--v:15%"></span></div>
+              </div>
+              <p>Maßhaltig, günstig und in vielen Farben erhältlich. Für Modelle, Prototypen und alles, was drinnen bleibt.</p>
+            </div>
+            <div class="mat">
+              <div class="code">PETG</div>
+              <div class="bars">
+                <div class="bar"><span>Festigkeit</span><span style="--v:75%"></span></div>
+                <div class="bar"><span>Hitze</span><span style="--v:50%"></span></div>
+                <div class="bar"><span>Flexibilität</span><span style="--v:35%"></span></div>
+              </div>
+              <p>Formstabil und unempfindlich gegen Feuchtigkeit. Gut für Halterungen und Teile, die etwas aushalten müssen.</p>
+            </div>
+            <div class="mat">
+              <div class="code">ASA</div>
+              <div class="bars">
+                <div class="bar"><span>Festigkeit</span><span style="--v:75%"></span></div>
+                <div class="bar"><span>Hitze</span><span style="--v:80%"></span></div>
+                <div class="bar"><span>Flexibilität</span><span style="--v:30%"></span></div>
+              </div>
+              <p>UV- und wetterbeständig. Für draußen, fürs Auto und überall, wo es warm wird.</p>
+            </div>
+            <div class="mat">
+              <div class="code">TPU</div>
+              <div class="bars">
+                <div class="bar"><span>Festigkeit</span><span style="--v:50%"></span></div>
+                <div class="bar"><span>Hitze</span><span style="--v:40%"></span></div>
+                <div class="bar"><span>Flexibilität</span><span style="--v:95%"></span></div>
+              </div>
+              <p>Weich wie Gummi und abriebfest. Für Puffer, Dichtungen, Griffe und Schutzhüllen.</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-  <p class="section__more">
-    <a href="{{ '/making/' | relative_url }}">All designs &rarr;</a>
-  </p>
-</section>
+      <section id="anfrage" class="quote-section">
+        <div class="wrap quote-layout">
+          <div>
+            <span class="label">Anfrage</span>
+            <h2>Was soll gedruckt werden?</h2>
+            <p class="lead">Je genauer du beschreibst, was du brauchst, desto schneller bekommst du ein Angebot. Wenn etwas fehlt, frage ich nach.</p>
+            <ul class="facts">
+              <li><span>Anfrage</span><span>kostenlos &amp; unverbindlich</span></li>
+              <li><span>Antwort</span><span>1–2 Werktage</span></li>
+              <li><span>Preis</span><span>Festpreis vorab</span></li>
+              <li><span>Dateien</span><span>gern später per E-Mail</span></li>
+            </ul>
+          </div>
+
+          <form class="quote" id="quote-form" novalidate>
+            <div class="form-title"><span>ANFRAGE</span><span>* Pflichtfeld</span></div>
+            <div class="row">
+              <div class="field">
+                <label for="name">Name *</label>
+                <input id="name" name="name" type="text" autocomplete="name" required>
+              </div>
+              <div class="field">
+                <label for="email">E-Mail *</label>
+                <input id="email" name="email" type="email" autocomplete="email" required>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="projekt">Beschreibung *</label>
+              <textarea id="projekt" name="projekt" required placeholder="z. B. Ersatz für einen gebrochenen Regalträger, ca. 6 × 4 cm, Foto und Maße kann ich schicken"></textarea>
+            </div>
+
+            <div class="row">
+              <div class="field">
+                <label for="stueckzahl">Stückzahl</label>
+                <input id="stueckzahl" name="stueckzahl" type="number" min="1" inputmode="numeric" placeholder="1">
+              </div>
+              <div class="field">
+                <label for="material">Material / Farbe <span class="opt">(optional)</span></label>
+                <input id="material" name="material" type="text" placeholder="z. B. PETG schwarz, oder: weiß nicht">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="field">
+                <label for="zeitrahmen">Zeitrahmen</label>
+                <select id="zeitrahmen" name="zeitrahmen">
+                  <option>Kein Zeitdruck</option>
+                  <option>Innerhalb von 2 Wochen</option>
+                  <option>Innerhalb einer Woche</option>
+                  <option>Dringend</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="budget">Budget</label>
+                <select id="budget" name="budget">
+                  <option>Noch offen</option>
+                  <option>Bis 50 €</option>
+                  <option>50–250 €</option>
+                  <option>250–1.000 €</option>
+                  <option>Über 1.000 €</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="telefon">Telefon <span class="opt">(optional)</span></label>
+              <input id="telefon" name="telefon" type="tel" autocomplete="tel">
+            </div>
+
+            <div class="hp" aria-hidden="true">
+              <label for="_gotcha">Nicht ausfüllen</label>
+              <input id="_gotcha" name="_gotcha" type="text" tabindex="-1" autocomplete="off">
+            </div>
+
+            <label class="consent">
+              <input type="checkbox" name="datenschutz" required>
+              <span>Ich bin einverstanden, dass meine Angaben zur Bearbeitung der Anfrage verwendet werden. Mehr dazu in der <a href="/imprint/#datenschutz">Datenschutzerklärung</a>. *</span>
+            </label>
+
+            <button class="btn primary" type="submit"><span>Anfrage absenden</span><span class="arrow" aria-hidden="true">→</span></button>
+            <p class="status" id="form-status" role="status" aria-live="polite"></p>
+
+            <div class="mail-fallback" id="mail-fallback" hidden>
+              <p class="mf-title">Es hat sich kein E-Mail-Programm geöffnet?</p>
+              <p>Kein Problem. Kopier die Nachricht und schick sie aus deinem Postfach an mich, zum Beispiel über Gmail, GMX oder web.de.</p>
+              <label class="mf-label" for="mail-text">Deine Nachricht</label>
+              <textarea id="mail-text" readonly></textarea>
+              <div class="mf-actions">
+                <button type="button" class="btn" id="copy-text">Nachricht kopieren</button>
+              </div>
+              <div class="mf-address">
+                <span>An: <a id="mail-address" href="#"></a></span>
+                <button type="button" class="mf-copy" id="copy-address">Adresse kopieren</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section id="faq" class="faq">
+        <div class="wrap">
+          <div class="section-head">
+            <div>
+              <span class="label">FAQ</span>
+              <h2>Häufige Fragen</h2>
+            </div>
+          </div>
+          <div class="faq-list">
+            <details>
+              <summary>Brauche ich eine fertige 3D-Datei?</summary>
+              <p>Nein. Mit einer STL-, STEP- oder 3MF-Datei geht es zwar schneller, oft reichen aber auch eine Skizze mit Maßen, ein Foto oder das kaputte Originalteil. Den Aufwand fürs Konstruieren führe ich im Angebot separat auf.</p>
+            </details>
+            <details>
+              <summary>Was kostet ein Druck?</summary>
+              <p>Das hängt von Größe, Material, Druckzeit und Stückzahl ab. Kleine Einzelteile liegen meist im niedrigen zweistelligen Bereich. Den Festpreis kennst du immer, bevor ich anfange.</p>
+            </details>
+            <details>
+              <summary>Wie lange dauert es?</summary>
+              <p>Einfache Teile sind oft nach wenigen Tagen fertig. Bei Serien oder wenn ich das Teil erst konstruieren muss, vereinbaren wir einen festen Termin.</p>
+            </details>
+            <details>
+              <summary>Wie genau sind die Teile?</summary>
+              <p>Je nach Form und Material sind etwa ±0,2 mm realistisch. Für feine Details nehme ich eine 0,4-mm-Düse, für große, stabile Teile bis zu 0,8 mm. Wenn etwas exakt sitzen muss, drucke ich vorher ein kleines Probeteil.</p>
+            </details>
+            <details>
+              <summary>Wie groß darf ein Teil sein?</summary>
+              <p>Am Stück bis zu 340 × 320 × 340 mm. Größere Teile teile ich auf und verbinde sie anschließend, zum Beispiel verklebt oder verschraubt.</p>
+            </details>
+            <details>
+              <summary>Verschickst du auch?</summary>
+              <p>Ja, deutschlandweit per Paket. Nach Absprache kannst du dein Teil auch abholen.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrap">
+        <span>© <span id="year">2026</span> Piet Brauer-Kallenberg · nerdish by nature</span>
+        <nav aria-label="Weitere Seiten">
+          <a href="/apps/">Apps</a>
+          <a href="/making/">Making</a>
+          <a href="/imprint/">Impressum &amp; Datenschutz</a>
+          <a href="https://github.com/nerdishbynature" rel="me">GitHub</a>
+        </nav>
+      </div>
+    </footer>
+  </div>
+
+  <script src="/assets/druck/cursor.js"></script>
+  <script src="/assets/druck/form.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
