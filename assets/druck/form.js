@@ -20,8 +20,9 @@ var EMAIL = ["piet", "nerdishbynature.com"].join("@"); // split so scrapers miss
   }
 
   function compose(data) {
-    var subject = "Angebotsanfrage 3D-Druck – " + data.get("firma");
+    var subject = "Angebotsanfrage 3D-Druck: " + data.get("anliegen") + " – " + data.get("firma");
     var body = [
+      "Anliegen: " + data.get("anliegen"),
       "Name: " + data.get("name"),
       "Firma: " + data.get("firma"),
       "E-Mail: " + data.get("email"),
@@ -81,6 +82,13 @@ var EMAIL = ["piet", "nerdishbynature.com"].join("@"); // split so scrapers miss
 
     setStatus("Ihr E-Mail-Programm sollte sich jetzt mit der fertigen Nachricht öffnen. Sie müssen sie nur noch absenden.", "ok");
     window.location.href = href;
+  });
+
+  // Links like the Prototyp-Express button preselect the request type.
+  document.querySelectorAll("[data-anliegen]").forEach(function (link) {
+    link.addEventListener("click", function () {
+      form.elements.anliegen.value = link.dataset.anliegen;
+    });
   });
 
   document.getElementById("copy-text").addEventListener("click", function () {
