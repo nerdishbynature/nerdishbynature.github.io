@@ -510,6 +510,7 @@ footer a:hover { color: var(--blue); }
   .logo .tag { font-size: 10px; padding: 3px 5px; }
   nav.main a.cta { padding: 9px 10px; margin-left: 0; white-space: nowrap; }
   .cta-arrow { display: none; }
+  .label-extra { display: none; }
   section { padding: 72px 0; }
   .hero { padding: 56px 0 72px; }
   .process { grid-template-columns: 1fr; }
