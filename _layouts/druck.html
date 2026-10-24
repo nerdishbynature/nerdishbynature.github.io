@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title | escape }}</title>
+  <meta name="description" content="{{ page.description | escape }}">
+  <meta name="theme-color" content="#f3f3ef">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+  <link rel="preload" href="/assets/druck/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/druck/style.css">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  {%- if page.url == "/" %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "nerdish by nature – 3D-Druck",
+    "description": "3D-Druck für Unternehmen: Funktionsprototypen, Kleinserien, Vorrichtungen, Gehäuse und Nachbau per 3D-Scan.",
+    "url": "https://nerdishbynature.com/",
+    "founder": "Piet Brauer-Kallenberg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Alt Dellnau 11A",
+      "postalCode": "06842",
+      "addressLocality": "Dessau-Roßlau",
+      "addressRegion": "Sachsen-Anhalt",
+      "addressCountry": "DE"
+    },
+    "areaServed": ["Dessau-Roßlau", "Deutschland"]
+  }
+  </script>
+  {%- endif %}
+</head>
+<body>
+  <div class="page">
+    <header class="top">
+      <div class="wrap">
+        <a class="logo" href="/"><span class="mark"><i></i><i></i><i></i></span>nerdish by nature<span class="tag">3D-Druck</span></a>
+        <nav class="main" aria-label="Hauptnavigation">
+          <a href="/#express">Express</a>
+          <a href="/#leistungen">Leistungen</a>
+          <a href="/#projekte">Projekte</a>
+          <a href="/#faq">FAQ</a>
+          <a class="wa" href="#" data-whatsapp target="_blank" rel="noopener" aria-label="Per WhatsApp schreiben" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9.2 8.2c.3-.4.9-.4 1.1.1l.6 1.4c.1.3 0 .6-.2.8l-.5.5c.6 1.2 1.6 2.2 2.8 2.8l.5-.5c.2-.2.5-.3.8-.2l1.4.6c.5.2.5.8.1 1.1-.6.6-1.5.9-2.3.6a8 8 0 0 1-4.9-4.9c-.3-.8 0-1.7.6-2.3Z" fill="currentColor"/></svg><span class="wa-text">WhatsApp</span></a>
+          <a class="cta" href="/#anfrage">Anfrage<span class="cta-arrow"> →</span></a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      {{ content }}
+    </main>
+
+    <footer>
+      <div class="wrap">
+        <span>© <span id="year">{{ 'now' | date: "%Y" }}</span> Piet Brauer-Kallenberg · nerdish by nature · Dessau-Roßlau</span>
+        <nav aria-label="Weitere Seiten">
+          <a href="/imprint/">Impressum &amp; Datenschutz</a>
+        </nav>
+      </div>
+    </footer>
+  </div>
+
+  <script src="/assets/druck/form.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
