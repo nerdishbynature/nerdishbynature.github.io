@@ -20,15 +20,16 @@ var EMAIL = ["piet", "nerdishbynature.com"].join("@"); // split so scrapers miss
   }
 
   function compose(data) {
-    var subject = "Angebotsanfrage 3D-Druck – " + data.get("name");
+    var subject = "Angebotsanfrage 3D-Druck – " + data.get("firma");
     var body = [
       "Name: " + data.get("name"),
+      "Firma: " + data.get("firma"),
       "E-Mail: " + data.get("email"),
       "Telefon: " + (data.get("telefon") || "–"),
       "Stückzahl: " + (data.get("stueckzahl") || "–"),
       "Material / Farbe: " + (data.get("material") || "–"),
-      "Zeitrahmen: " + (data.get("zeitrahmen") || "–"),
-      "Budget: " + (data.get("budget") || "–"),
+      "Liefertermin: " + (data.get("zeitrahmen") || "–"),
+      "Budgetrahmen: " + (data.get("budget") || "–"),
       "",
       data.get("projekt")
     ].join("\n");
@@ -78,7 +79,7 @@ var EMAIL = ["piet", "nerdishbynature.com"].join("@"); // split so scrapers miss
     addressLink.textContent = EMAIL;
     fallback.hidden = false;
 
-    setStatus("Dein E-Mail-Programm sollte sich jetzt mit der fertigen Nachricht öffnen. Du musst sie nur noch abschicken.", "ok");
+    setStatus("Ihr E-Mail-Programm sollte sich jetzt mit der fertigen Nachricht öffnen. Sie müssen sie nur noch absenden.", "ok");
     window.location.href = href;
   });
 
