@@ -38,22 +38,6 @@ body {
   background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40'><g fill='%232f5bff' fill-opacity='.06'><rect x='8' width='1' height='40'/><rect y='8' width='40' height='1'/><rect x='16' width='1' height='40'/><rect y='16' width='40' height='1'/><rect x='24' width='1' height='40'/><rect y='24' width='40' height='1'/><rect x='32' width='1' height='40'/><rect y='32' width='40' height='1'/></g><g fill='%232f5bff' fill-opacity='.163'><rect width='1' height='40'/><rect width='40' height='1'/></g></svg>");
 }
 
-#nozzle {
-  position: fixed;
-  top: 0;
-  left: 0;
-  pointer-events: none;
-  z-index: 50;
-  font: 500 11px/1.3 var(--mono);
-  color: var(--blue-deep);
-  background: var(--surface);
-  border: 1px solid var(--blue);
-  padding: 3px 6px;
-  white-space: pre;
-  opacity: 0;
-  transition: opacity 0.2s ease;
-  will-change: transform, opacity;
-}
 .page { position: relative; z-index: 1; }
 
 a { color: inherit; }
@@ -292,19 +276,27 @@ section { padding: 104px 0; }
   border: 1px solid var(--ink);
   padding: 32px;
 }
-.case .stat {
-  font: 700 52px/1 var(--mono);
-  letter-spacing: -0.03em;
-  color: var(--blue);
-  margin-bottom: 20px;
-}
-.case h3 { margin-bottom: 10px; }
-.case p { margin: 0; }
-.case .case-meta {
-  margin-top: 18px;
+.case { display: flex; flex-direction: column; }
+.case .case-kicker {
+  margin: 0 0 14px;
   font: 500 12px/1.4 var(--mono);
+  color: var(--blue-deep);
+}
+.case h3 { margin-bottom: 12px; }
+.case p { margin: 0; }
+.case .case-time {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  margin-top: auto;
+  padding-top: 18px;
+  border-top: 1px dashed var(--rule);
+  font: 500 12.5px/1.4 var(--mono);
   color: var(--ink-mute);
 }
+.case > p:nth-of-type(2) { margin-bottom: 22px; }
+.case .case-time strong { color: var(--ink); font-weight: 700; white-space: nowrap; }
 
 /* Services list */
 .services {
@@ -596,7 +588,6 @@ footer a:hover { color: var(--blue); }
   .offer { box-shadow: 4px 4px 0 var(--blue); }
   .price { font-size: 46px; }
   .case { padding: 24px 18px; }
-  .case .stat { font-size: 44px; }
   .row { grid-template-columns: 1fr; gap: 0; }
   form.quote { padding: 24px 18px; }
   .legal .sheet { padding: 28px 20px; }
@@ -608,5 +599,5 @@ footer a:hover { color: var(--blue); }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .btn, .btn .arrow, #nozzle { transition: none; }
+  .btn, .btn .arrow { transition: none; }
 }
